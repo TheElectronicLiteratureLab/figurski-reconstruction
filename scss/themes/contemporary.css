@@ -1,0 +1,528 @@
+body.contemporary {
+  background-image: url(../imgs/all-color-swirl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Fira Sans", sans-serif;
+  position: relative;
+}
+
+body.contemporary .wrapper::after {
+  content: '';
+  display: block;
+  position: fixed;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+body.contemporary .contemp-hide {
+  display: block;
+  display: none;
+}
+
+body.contemporary .introduction {
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body.contemporary .introduction h2 {
+  font-family: "Cotton";
+}
+
+body.contemporary .introduction h3 {
+  cursor: pointer;
+}
+
+body.contemporary .introduction h3::before {
+  display: inline-block;
+  content: '\203A';
+  margin-right: 10px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+body.contemporary #nav-window-top {
+  max-width: 300px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body.contemporary #nav-close {
+  display: none;
+  right: initial;
+  top: 11%;
+}
+
+body.contemporary .bulleted-intro-list ul {
+  list-style: circle;
+}
+
+body.contemporary .bulleted-intro-list li {
+  margin-top: 15px;
+}
+
+body.contemporary .bulleted-intro-list {
+  padding-left: 2em;
+}
+
+body.contemporary .note-pull-quote {
+  padding-left: 2em;
+}
+
+body.contemporary .introduction h3:hover::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+body.contemporary .note039 .lexia-title div {
+  margin-bottom: 15px;
+}
+
+body.contemporary .lexia-title-icon {
+  display: inline-block;
+  height: 1.1em;
+  padding-right: .5em;
+  position: relative;
+  top: 2px;
+}
+
+body.contemporary #email .date {
+  color: white;
+  font-weight: bold;
+}
+
+body.contemporary #email .date.black-date {
+  color: black !important;
+  font-weight: normal !important;
+}
+
+body.contemporary h6 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+body.contemporary .start-larger {
+  font-family: "Source Serif Pro", serif;
+}
+
+body.contemporary .newspaper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Source Serif Pro", serif;
+}
+
+body.contemporary .newspaper div {
+  padding: 15px;
+}
+
+body.contemporary .newspaper-headline {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  margin-left: 15px;
+  line-height: 1;
+  text-align: left;
+}
+
+body.contemporary .modal-right-close {
+  border: 2.8px solid black;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: black;
+  width: 2em;
+  height: 2em;
+  right: 500px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+body.contemporary .modal-right-close:hover {
+  background-color: black;
+  color: white;
+}
+
+body.contemporary .map {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+}
+
+body.contemporary #map-border {
+  position: relative;
+  z-index: 5;
+}
+
+body.contemporary .contemporary-dedication {
+  display: block;
+}
+
+body.contemporary .classic-dedication {
+  display: none;
+}
+
+body.contemporary .contemporary-img {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+body.contemporary .contemporary-img img {
+  width: 100%;
+}
+
+body.contemporary .classic-img {
+  display: none;
+}
+
+body.contemporary .map-container-grid,
+body.contemporary .map-container-grid-1,
+body.contemporary .map-container-grid-4,
+body.contemporary .notes-map-background {
+  background-color: white;
+  max-width: 60%;
+  margin: 30px auto;
+  margin-bottom: 30px;
+  padding: 100px 50px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+body.contemporary .note-image {
+  max-width: 100%;
+}
+
+body.contemporary .map-close {
+  position: absolute;
+  top: 6em;
+  right: 23%;
+  cursor: pointer;
+}
+
+body.contemporary .global-map {
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(201, 63, 63, 0.2);
+          box-shadow: 5px 5px 5px 1px rgba(201, 63, 63, 0.2);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: black;
+  color: white;
+  max-width: 10em;
+  border-radius: 5px;
+  position: absolute;
+  left: 23%;
+  top: 5em;
+}
+
+body.contemporary .global-map:hover {
+  background-color: #707070;
+  color: white;
+}
+
+body.contemporary .lexia-map-open {
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(112, 112, 112, 0.2);
+          box-shadow: 5px 5px 5px 1px rgba(112, 112, 112, 0.2);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: black;
+  color: white;
+  max-width: 10em;
+  border-radius: 5px;
+  position: absolute;
+  left: 23%;
+  top: 5em;
+}
+
+body.contemporary .lexia-map-open:hover {
+  background-color: #707070;
+  color: white;
+}
+
+body.contemporary .map-outer {
+  background-color: white;
+  color: white;
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(112, 112, 112, 0.2);
+          box-shadow: 5px 5px 5px 1px rgba(112, 112, 112, 0.2);
+  width: 98%;
+  height: 5em;
+  border-radius: 0px 0px 5px 5px;
+}
+
+body.contemporary .map-inner a {
+  color: white;
+}
+
+body.contemporary .map-inner {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 2em;
+  font-size: .75em;
+  line-height: 1.75em;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+body.contemporary .body {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 5;
+}
+
+@media only screen and (min-width: 800px) {
+  body.contemporary .body {
+    margin-top: 30px;
+  }
+}
+
+body.contemporary .nav-control {
+  font-family: 'Fira Sans';
+}
+
+body.contemporary .left {
+  border: none;
+  border-radius: 0 0 0 5px;
+}
+
+body.contemporary .left::after {
+  content: '\2039';
+  -webkit-transform: none;
+          transform: none;
+}
+
+body.contemporary .right {
+  border: none;
+  border-radius: 0 0 5px 0;
+}
+
+body.contemporary .right::after {
+  content: '\203A';
+}
+
+body.contemporary .mapview {
+  border: none;
+  border-radius: 5px 0 0 0;
+}
+
+body.contemporary .navigator-open {
+  border: none;
+  border-radius: 5px;
+}
+
+body.contemporary .show-links {
+  border: none;
+  border-radius: 0 5px 0 0;
+}
+
+body.contemporary #navigator {
+  font-family: "Fira Sans", sans-serif;
+  border: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 7;
+}
+
+body.contemporary #navigator .date {
+  color: black !important;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+body.contemporary #navigator ol {
+  background-color: white;
+  border-radius: 5px;
+  max-width: 300px;
+  padding: 40px;
+  margin: 40px auto auto auto;
+  position: relative;
+}
+
+body.contemporary #navigator .lexia-number {
+  color: black;
+}
+
+body.contemporary #nav-window-top {
+  width: 100%;
+}
+
+body.contemporary .general-link {
+  color: black;
+}
+
+body.contemporary .title span {
+  display: block;
+}
+
+body.contemporary .title {
+  text-transform: uppercase;
+}
+
+body.contemporary .people {
+  color: black;
+}
+
+body.contemporary a.people {
+  color: #018C8C;
+}
+
+body.contemporary .artifacts {
+  color: black;
+}
+
+body.contemporary a.artifacts {
+  color: #F2695C;
+}
+
+body.contemporary .places {
+  color: black;
+}
+
+body.contemporary a.places {
+  color: #75C1A4;
+}
+
+body.contemporary .lexia-number {
+  text-align: left;
+  position: fixed;
+  top: 40px;
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  body.contemporary .lexia-number {
+    top: 60px;
+  }
+}
+
+body.contemporary .work-title {
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  top: 15px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 800px) {
+  body.contemporary .work-title {
+    top: auto;
+  }
+}
+
+body.contemporary .title {
+  max-width: 1200px;
+  font-family: "Fira Sans", sans-serif;
+  margin: auto;
+  position: relative;
+  max-width: auto;
+  top: initial;
+  left: initial;
+  color: black;
+  z-index: -1;
+  line-height: 1.65;
+}
+
+body.contemporary .title a {
+  color: black;
+  font-weight: bold;
+}
+
+body.contemporary .hidden {
+  display: none !important;
+}
+
+body.contemporary .hidden-link {
+  color: black !important;
+}
+
+body.contemporary .date {
+  color: black;
+}
+
+body.contemporary a.date {
+  color: black;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 800px) {
+  body.contemporary .title {
+    color: white;
+    position: fixed;
+    top: 90px;
+    left: 15px;
+    right: 0;
+  }
+  body.contemporary .title a {
+    color: white;
+  }
+  body.contemporary a.date {
+    color: white;
+  }
+}
+
+body.contemporary #navigator .arch-text {
+  display: none;
+}
+
+body.contemporary #map-border .arch-text {
+  display: none;
+}
+
+body.contemporary #map-window-top {
+  width: 1000px;
+}
+
+body.contemporary #time-date-reset a.date {
+  color: #B2B2B2;
+}
+
+body.contemporary #time-date-reset a.date {
+  color: black !important;
+  cursor: pointer;
+}
+
+body.contemporary a.people,
+body.contemporary a.places,
+body.contemporary a.artifacts {
+  display: inline;
+  font-weight: bold;
+}
+
+body.contemporary .people.underline,
+body.contemporary .places.underline,
+body.contemporary .artifacts.underline,
+body.contemporary .date.underline {
+  text-decoration: none;
+}
+
+body.contemporary #holodeck {
+  font-family: "Exo 2", monospace;
+  font-size: 1.1em;
+}
+
+body.contemporary #holodeck .title {
+  font-size: .9em;
+}
+
+body.contemporary .poem {
+  font-family: "Source Serif Pro", serif;
+}
+
+body.contemporary #email {
+  font-family: "Courier New", monospace;
+}
+/*# sourceMappingURL=contemporary.css.map */

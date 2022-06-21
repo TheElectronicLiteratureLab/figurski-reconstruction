@@ -1,0 +1,439 @@
+@import '../abstracts/mixins';
+
+body.archive {
+
+  font-family: 'New York', Georgia, serif;
+  background-image: url(../imgs/macos9-wallpaper.jpg);
+
+  .classic-hide {
+    display: none;
+  }
+
+  .body {
+    max-height: 80vh;
+    background-color: white;
+  }
+
+  h6 {
+    font-weight: bold;
+  }
+
+  .map-outer{
+    border: 2px black solid;
+    background-color: white;
+    color:black;
+        box-shadow: 3px 3px 0px 1px black;
+    width: 98%;
+    height: 5em;
+  }
+  
+  .contemporary-img{
+display:none;
+}
+
+.lexia-title-icon{
+  display:none;
+}
+.center-title {
+  text-align: center;
+}
+
+.note039 .lexia-title div {
+  margin-bottom: 15px;
+}
+
+.classic-img{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+
+  .map-inner{
+    border-bottom: 2px black solid;
+    color:black;
+    width: 100%;
+    height: 2em;
+    font-size:.75em;
+    line-height: 1.75em;
+    text-align: center;
+  }
+
+  .map-inner a{
+    color:black;
+  }
+
+  .introduction {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .hidden {
+    display: inline;
+  }
+
+  .introduction h1 {
+    font-family: $primary-arch;
+    text-transform: uppercase;
+    font-size: 3.5em;
+  }
+
+  .introduction .nav-border {
+    left: 15px;
+  }
+
+  .nav-x-list a {
+    text-decoration: underline;
+  }
+
+  .people{
+  color:$people-arch;
+  }
+  .artifacts{
+    color:$artifacts-arch;
+  }
+  .places{
+    color:$places-arch;
+  }
+
+  .date{
+    color:$time-arch;
+  }
+  .general-link{
+  color:$intro-notes-arch;
+  }
+
+  .nav-control {
+    font-family: $primary-arch;
+  }
+
+  .modal-right-close{
+    border: 2.8px solid black;
+    transition: all .3s;
+    color: black;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+  }
+
+  .modal-right-close:hover{
+  background-color: rgba(0,0,0,1);
+  color: white;
+  }
+
+  .global-map{
+    border: 3px solid black;
+        transition: all .3s;
+  background-color: white;
+            color: black;
+            max-width: 10em;
+  }
+
+  .global-map:hover{
+  background-color: rgba(0,0,0,1);
+  color: white;
+  }
+
+  .lexia-map-open{
+    border: 3px solid black;
+        transition: all .3s;
+  background-color: white;
+            color: black;
+            max-width: 10em;
+                display: none;
+  }
+
+  .lexia-map-open:hover{
+  background-color: rgba(0,0,0,1);
+  color: white;
+  }
+
+  .contemporary-dedication{
+  display:none;
+  }
+
+  .classic-dedication{
+    display:block;
+  }
+
+  .arch-text {
+    display: inline-grid;
+    background-color: $border-back-arch;
+    background-image: url(../imgs/lex_background_left.svg), url(../imgs/lex_background_right.svg);
+    background-position: right, left;
+    background-repeat: no-repeat;
+    width: fit-content;
+    padding: 0 10px;
+    justify-self: center;
+  }
+
+  .lexia-number {
+    border-style: solid;
+    border-width: $lex-border-arch;
+    border-color: $border-highlight;
+    background-color: $border-back-arch;
+    background: $lex-back-img;
+    background-size: auto 24px;
+    position: relative;
+    .faux-close {
+      position: absolute;
+      display: grid;
+      width: 17px;
+      height: 17px;
+      border: solid $bord-width $border-shadow;
+      right: 3px;
+      top: 2px;
+      div, .modal-right-close {
+        display: inline-grid;
+        border: solid black;
+        border-width: $lex-border-arch;
+        border-bottom-width: $bord-width;
+        background-color: $border-back-arch;
+      }
+    }
+  }
+
+  .work-title {
+    margin-top: -60px;
+    font-weight: bold;
+  }
+
+  .line-break {
+    display: block;
+  }
+
+  .arch-black-out {
+    border: solid black;
+    border-width: $lex-border-arch;
+    margin-left: 20%;
+    margin-top: 75px;
+    box-sizing: border-box;
+  }
+
+  @media only screen and (min-width: 800px) {
+    .arch-black-out {
+      margin-left: 33%;
+    }
+  }
+  
+  .border-high {
+    border-color: $border-highlight;
+    border-bottom-color: $border-shadow;
+  }
+
+  .border-back {
+    border-width: $bord-width*2;
+    border-color: $border-back-arch;
+  }
+
+  .border-shadow {
+    border-color: $border-shadow;
+  }
+
+  .body, .border-high, .border-back, .border-shadow {
+    border-style: solid;
+  }
+
+  .body {
+    display: grid;
+  }
+  .body, .border-high, .border-shadow, .outline {
+    border-width: $bord-width;
+  }
+
+  .body, .border-high, .border-back {
+    border-top-width: 0;
+  }
+
+  .border-high, .border-back, .border-shadow, .outline {
+    display: inline-grid;
+  }
+
+  .border-shadow {
+    border-bottom-color: $border-highlight;
+  }
+
+  .outline {
+    // overflow-y: scroll;
+    // max-height: 65vh;  
+    border: solid $bord-width black;
+    background-color: white;
+  }
+  
+  .body-pad {
+    padding: 15px;
+    max-height: 60vh;
+    overflow-y: scroll;
+  }
+
+
+  .window-top {
+    display: inline-grid;
+  }
+
+  // width
+  ::-webkit-scrollbar {
+    width: 20px;
+    top: 1px;
+    position: relative;
+  }
+  ::-webkit-scrollbar-button {
+      border-width: 0 $bord-width;
+      border-style: solid;
+      border-color: black;
+      display: block;
+    background-color: $border-back-arch;
+    height: 10px;
+  }
+  // Track
+  ::-webkit-scrollbar-track,::-webkit-scrollbar-thumb {
+    background: white;
+    border-width:  $bord-width;
+    border-style: solid;
+    border-color: black;
+  }
+  
+  // Handle
+  ::-webkit-scrollbar-thumb {
+    background: $border-back-arch;
+  }
+  
+  // Handle on hover
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  // navigation
+  .nav-border {
+    border: solid 2px black;
+    position: fixed;
+    width: 150px;
+    bottom: 15vh;
+    background-color: $border-back-arch;
+    .outline {
+      display: block;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      margin: 3px;
+      background-color: white;
+    }
+    .nav-control {
+      position: relative;
+      width: auto;
+      bottom: auto;
+      border: solid black;
+      border-width: $bord-width 0 0;
+      .navigator-open {
+        margin: 0;
+        border-top: solid black $bord-width;
+      }
+      div{
+        border: 0;
+      }
+      
+    }
+  }
+  .shadow {
+    box-shadow: black 5px 5px;
+  }
+  
+  // map
+  #map-border {
+    width: 80%;
+  }
+  #navigator {
+    width: 18em;
+    height: 85%;
+    //   overflow-y: auto;
+  }
+  
+  .nav-inner {
+    padding: 15px 0;
+    background-color: white;
+    display: inline;
+  }
+  .map, #navigator {
+    max-height: 65vh;
+  }
+  #map-border, #navigator {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index:10;
+    .border-high {
+      position: relative;
+      border-width: inherit;
+      grid-template-rows: 24px auto;
+    }
+    .border-back {
+      height: inherit;
+    }
+    #map-close, #nav-close {
+      font-size: 0.7em;
+      left: 0;
+    }
+    .map {
+      margin-left: 15px;
+    }
+    .map, .navigator {
+      transform: none;
+      display: inherit;
+      border-width: 0;
+      position: relative;
+      left: 0;
+      top: auto;
+      width: auto;
+      height: auto;
+      padding: 0;
+      .lexia-map-open, .global-map {
+        position: relative;
+      }
+    }
+  }
+   .mapview:hover{
+
+      background-color: lightgrey;
+
+    }
+
+
+  @media only screen and (min-width: 800px) {
+    .mapview{
+      border: 2px solid black;
+      border-right:  2px solid black;
+      grid-area: mapview;
+      background-color: white;
+      transition: background-color .3s;
+      padding: 15px 0;
+    }
+    .mapview:hover{
+
+      background-color: lightgrey;
+
+    }
+  }
+
+#holodeck {
+  font-family: $holodeck-arch;
+}
+
+.poem {
+  font-family: $primary-arch;
+}
+
+#email {
+  font-family: $terminal-arch;
+}
+
+}/* closes body.archive */
+ 
+
+
+

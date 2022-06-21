@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("../fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("../fonts/Fira_Sans/FiraSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("../fonts/Fira_Sans/FiraSans-SemiBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("../fonts/Fira_Sans/FiraSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url("../fonts/Exo_2/Exo2-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url("../fonts/Exo_2/Exo2-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url("../fonts/Exo_2/Exo2-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url("../fonts/Exo_2/Exo2-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url("../fonts/Source_Serif_Pro/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url("../fonts/Source_Serif_Pro/SourceSerifPro-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url("../fonts/Source_Serif_Pro/SourceSerifPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Source Serif Pro';
+  src: url("../fonts/Source_Serif_Pro/SourceSerifPro-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-top: 15px;
+}
+
+pre {
+  padding-left: 20px;
+}
+
+.body p {
+  margin-top: 15px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small {
+  font-size: .9em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.no-italic {
+  font-style: normal;
+}
+
+.center {
+  text-align: center;
+}
+
+.start-larger {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.black {
+  color: black !important;
+}
+
+.normalize {
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 3.25em;
+  font-family: 'Cotton';
+  letter-spacing: 3px;
+  line-height: 1.25;
+  text-align: center;
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+.landing h2 {
+  font-family: "Cotton";
+  font-size: 2.75em;
+  letter-spacing: 3px;
+}
+
+.introduction h2, .resources h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.resources h2 {
+  font-family: "Cotton";
+}
+
+.resources article p span {
+  display: block;
+  font-size: .9em;
+  margin-top: 5px;
+}
+
+.resources article a {
+  text-decoration: underline;
+}
+
+.introduction h3 {
+  font-weight: 600;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+.people-color {
+  color: blue;
+}
+
+.artifacts-color {
+  color: red;
+}
+
+.places-color {
+  color: green;
+}
+
+#email {
+  line-height: 1.35;
+}
+
+.instructions {
+  font-family: "Courier New", monospace;
+}
+
+.book-title {
+  font-size: 2em;
+  padding-bottom: .7em;
+}
+
+.comas-title {
+  font-size: 2em;
+  padding-bottom: .3em;
+}
+
+.comas-body {
+  padding-top: .75em;
+}
+
+.comas-body p {
+  padding-top: 0em;
+}
+
+.comas-subtitle {
+  font-size: 1.6em;
+  padding-bottom: .2em;
+}
+
+.comas-subtitle p {
+  padding-top: 0em;
+  line-height: 1.25em;
+}
+
+.first-comas {
+  font-size: 1.2em;
+}
+
+.book-chapter {
+  font-size: 1.3em;
+  letter-spacing: .05em;
+  padding-bottom: .7em;
+}
+
+.superscript {
+  font-size: .7em;
+  padding-bottom: .3em;
+}
+
+.book-sub-chapter {
+  font-size: 1.2em;
+  margin-bottom: .25em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.price {
+  padding-left: 25%;
+}
+/*# sourceMappingURL=typography.css.map */

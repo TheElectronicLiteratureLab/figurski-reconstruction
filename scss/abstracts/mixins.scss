@@ -1,0 +1,52 @@
+// archival fonts
+$primary-arch: 'New York', Georgia, serif;
+$holodeck-arch: 'Monaco', 'Consolas', sans-serif;
+$terminal-arch: 'Courier New', monospace;
+// $map-arch: TBD;
+// $notes-arch: TBD;
+
+// contemporary fonts
+$primary-cont: 'Fira Sans', sans-serif;
+$holodeck-cont: 'Exo 2', monospace;
+$terminal-cont: 'Courier New', monospace;
+$title-cont: 'Cotton';
+$map-cont: 'Fira Sans', sans-serif;
+$poem-cont: 'Source Serif Pro', serif;
+// $notes-cont: TBD;
+
+// archival colors
+$people-arch: #0000ff;
+$places-arch: #008000;
+$artifacts-arch: #FF0000;
+$time-arch: #FF69B4;
+$intro-notes-arch: #87CEEB;
+$story-arch: #000000;
+$border-back-arch:#cccccc;
+$border-highlight: #ffffff;
+$border-shadow: #888888;
+
+// contemporary colors
+$people-cont: #018C8C;
+$places-cont: #75C1A4;
+$artifacts-cont: #F2695C;
+$time-cont: #B2B2B2;
+$intro-notes-cont: #EDCCB8;
+$story-cont: #0E0E0E;
+
+// media break points
+$medium-width: 800px;
+$large-width: 1300px;
+
+// archive padding/margins
+$pad-arch: 10px;
+$marg-arch: 15vw;
+
+// archive border widths
+$bord-width: 2px;
+$bord-width-5: $bord-width *5;
+$bord-width-arch: 0 $bord-width $bord-width;
+$lex-border-arch: $bord-width $bord-width 0;
+
+// archive lexia background
+$lex-back-img: url(../imgs/lex_background_left.svg) left no-repeat, url(../imgs/lex_background_right.svg) right no-repeat, url(../imgs/lex_background.svg) repeat;
+$lex-back-size: 2px, /* auto,  */2px;

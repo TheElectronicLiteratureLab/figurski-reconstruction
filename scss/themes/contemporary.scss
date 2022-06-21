@@ -1,0 +1,526 @@
+@import '../abstracts/mixins';
+
+body.contemporary {
+  background-image: url(../imgs/all-color-swirl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: $primary-cont;
+  position: relative;
+
+  .wrapper::after {
+    content: '';
+    display: block;
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+  .contemp-hide {
+    display: block;
+    display: none;
+  }
+
+  .introduction {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .introduction h2 {
+    font-family: $title-cont;
+  }
+
+  .introduction h3 {
+    cursor: pointer;
+  }
+
+  .introduction h3::before {
+    display: inline-block;
+    content: '\203A';
+    margin-right: 10px;
+    transition: all .3s;
+  }
+
+  #nav-window-top {
+    max-width: 300px;
+    justify-self: center;
+  }
+
+  #nav-close {
+    display: none;
+    right: initial;
+    top: 11%;
+  }
+
+  .bulleted-intro-list ul {
+    list-style: circle;
+  }
+
+  .bulleted-intro-list li {
+    margin-top: 15px;
+  }
+
+  .bulleted-intro-list {
+    padding-left: 2em;
+  }
+
+  .note-pull-quote {
+    padding-left: 2em;
+  }
+
+  .introduction h3:hover::before {
+    transform: rotate(90deg);
+  }
+
+
+  .note039 .lexia-title div {
+    margin-bottom: 15px;
+  }
+
+  .lexia-title-icon {
+    display: inline-block;
+    height: 1.1em;
+    padding-right: .5em;
+    position: relative;
+    top: 2px;
+  }
+
+  #email .date {
+    color: white;
+    font-weight: bold;
+  }
+
+  #email .date.black-date {
+    color: black !important;
+    font-weight: normal !important;
+  }
+
+  h6 {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .start-larger {
+    font-family: $poem-cont;
+  }
+
+  .newspaper {
+    display: flex;
+    font-family: $poem-cont;
+  }
+
+  .newspaper div {
+    padding: 15px;
+  }
+
+  .newspaper-headline {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    margin-left: 15px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  .modal-right-close {
+    border: 2.8px solid black;
+    transition: all .3s;
+    color: black;
+    width: 2em;
+    height: 2em;
+    right: 500px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .modal-right-close:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+  }
+
+  .map {
+    background-color: rgba(0, 0, 0, .6);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+  }
+
+  #map-border {
+    position: relative;
+    z-index: 5;
+  }
+
+  .contemporary-dedication {
+    display: block;
+  }
+
+  .classic-dedication {
+    display: none;
+  }
+
+  .contemporary-img {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+
+  .contemporary-img img {
+    width: 100%;
+  }
+
+  .classic-img {
+    display: none;
+  }
+
+  .map-container-grid,
+  .map-container-grid-1,
+  .map-container-grid-4,
+  .notes-map-background {
+    background-color: white;
+    max-width: 60%;
+    margin: 30px auto;
+    margin-bottom: 30px;
+    padding: 100px 50px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .note-image {
+    max-width: 100%;
+  }
+
+  .map-close {
+    position: absolute;
+    top: 6em;
+    right: 23%;
+    cursor: pointer;
+  }
+
+  .global-map {
+    box-shadow: 5px 5px 5px 1px rgba(201, 63, 63, 0.2);
+    transition: all .3s;
+    background-color: black;
+    color: white;
+    max-width: 10em;
+    border-radius: 5px;
+    position: absolute;
+    left: 23%;
+    top: 5em;
+  }
+
+  .global-map:hover {
+    background-color: rgba(112, 112, 112, 1);
+    color: white;
+  }
+
+  .lexia-map-open {
+    box-shadow: 5px 5px 5px 1px rgba(112, 112, 112, .2);
+    transition: all .3s;
+    background-color: black;
+    color: white;
+    max-width: 10em;
+    border-radius: 5px;
+    position: absolute;
+    left: 23%;
+    top: 5em;
+  }
+
+  .lexia-map-open:hover {
+    background-color: rgba(112, 112, 112, 1);
+    color: white;
+  }
+
+
+  .map-outer {
+    background-color: white;
+    color: white;
+    box-shadow: 5px 5px 5px 1px rgba(112, 112, 112, .2);
+    width: 98%;
+    height: 5em;
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  .map-inner a {
+    color: white;
+  }
+
+  .map-inner {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 2em;
+    font-size: .75em;
+    line-height: 1.75em;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+
+  .body {
+    background-color: rgba(255, 255, 255, .85);
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 5;
+  }
+
+  @media only screen and (min-width: 800px) {
+    .body {
+      margin-top: 30px;
+    }
+  }
+
+  .nav-control {
+    font-family: 'Fira Sans';
+  }
+
+  .left {
+    border: none;
+    border-radius: 0 0 0 5px;
+  }
+
+  .left::after {
+    content: '\2039';
+    transform: none;
+  }
+
+  .right {
+    border: none;
+    border-radius: 0 0 5px 0;
+  }
+
+  .right::after {
+    content: '\203A';
+  }
+
+  .mapview {
+    border: none;
+    border-radius: 5px 0 0 0;
+  }
+
+  .navigator-open {
+    border: none;
+    border-radius: 5px;
+  }
+
+  .show-links {
+    border: none;
+    border-radius: 0 5px 0 0;
+  }
+
+  #navigator {
+    font-family: $primary-cont;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    display: none;
+    z-index: 7;
+  }
+
+  #navigator .date {
+    color: black !important;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  #navigator ol {
+    background-color: white;
+    border-radius: 5px;
+    max-width: 300px;
+    padding: 40px;
+    margin: 40px auto auto auto;
+    position: relative;
+  }
+
+  #navigator .lexia-number {
+    color: black;
+  }
+
+  #nav-window-top {
+    width: 100%;
+  }
+
+  .general-link {
+    color: black;
+  }
+
+  .title span {
+    display: block;
+  }
+
+  .title {
+    text-transform: uppercase;
+  }
+
+  .people {
+    color: black;
+  }
+
+  a.people {
+    color: $people-cont;
+  }
+
+  .artifacts {
+    color: black;
+  }
+
+  a.artifacts {
+    color: $artifacts-cont;
+  }
+
+  .places {
+    color: black;
+  }
+
+  a.places {
+    color: $places-cont;
+  }
+
+  .lexia-number {
+    text-align: left;
+    position: fixed;
+    top: 40px;
+    color: white;
+  }
+
+  @media only screen and (min-width: 800px) {
+    .lexia-number {
+      top: 60px;
+    }
+  }
+
+  .work-title {
+    font-family: $primary-cont;
+    color: white;
+    top: 15px;
+    font-weight: bold;
+  }
+
+  @media only screen and (min-width: 800px) {
+    .work-title {
+      top: auto;
+    }
+  }
+
+  .title {
+    max-width: 1200px;
+    font-family: $primary-cont;
+    margin: auto;
+    position: relative;
+    max-width: auto;
+    top: initial;
+    left: initial;
+    color: black;
+    z-index: -1;
+    line-height: 1.65;
+  }
+
+  .title a {
+    color: black;
+    font-weight: bold;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .hidden-link {
+    color: black !important;
+  }
+
+  .date {
+    color: black;
+  }
+
+  a.date {
+    color: black;
+    font-weight: bold;
+  }
+
+  @media only screen and (min-width: 800px) {
+    .title {
+
+      color: white;
+      position: fixed;
+      top: 90px;
+      left: 15px;
+      right: 0;
+    }
+
+    .title a {
+      color: white;
+    }
+
+    a.date {
+      color: white;
+    }
+
+  }
+
+  #navigator .arch-text {
+    display: none;
+  }
+
+  #map-border .arch-text {
+    display: none;
+  }
+
+  #map-window-top {
+    width: 1000px;
+  }
+
+  #time-date-reset a.date {
+    color: #B2B2B2;
+  }
+
+  #time-date-reset a.date {
+    color: black !important;
+    cursor: pointer;
+  }
+
+  a.people,
+  a.places,
+  a.artifacts {
+    display: inline;
+    font-weight: bold;
+  }
+
+  .people.underline,
+  .places.underline,
+  .artifacts.underline,
+  .date.underline {
+    text-decoration: none;
+  }
+
+  #holodeck {
+    font-family: $holodeck-cont;
+    font-size: 1.1em;
+  }
+
+  #holodeck .title {
+    font-size: .9em;
+  }
+
+  .poem {
+    font-family: $poem-cont;
+  }
+
+  #email {
+    font-family: $terminal-arch;
+  }
+
+
+}

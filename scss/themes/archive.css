@@ -1,0 +1,460 @@
+body.archive {
+  font-family: 'New York', Georgia, serif;
+  background-image: url(../imgs/macos9-wallpaper.jpg);
+}
+
+body.archive .classic-hide {
+  display: none;
+}
+
+body.archive .body {
+  max-height: 80vh;
+  background-color: white;
+}
+
+body.archive h6 {
+  font-weight: bold;
+}
+
+body.archive .map-outer {
+  border: 2px black solid;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 3px 3px 0px 1px black;
+          box-shadow: 3px 3px 0px 1px black;
+  width: 98%;
+  height: 5em;
+}
+
+body.archive .contemporary-img {
+  display: none;
+}
+
+body.archive .lexia-title-icon {
+  display: none;
+}
+
+body.archive .center-title {
+  text-align: center;
+}
+
+body.archive .note039 .lexia-title div {
+  margin-bottom: 15px;
+}
+
+body.archive .classic-img {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+body.archive .map-inner {
+  border-bottom: 2px black solid;
+  color: black;
+  width: 100%;
+  height: 2em;
+  font-size: .75em;
+  line-height: 1.75em;
+  text-align: center;
+}
+
+body.archive .map-inner a {
+  color: black;
+}
+
+body.archive .introduction {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body.archive .hidden {
+  display: inline;
+}
+
+body.archive .introduction h1 {
+  font-family: "New York", Georgia, serif;
+  text-transform: uppercase;
+  font-size: 3.5em;
+}
+
+body.archive .introduction .nav-border {
+  left: 15px;
+}
+
+body.archive .nav-x-list a {
+  text-decoration: underline;
+}
+
+body.archive .people {
+  color: #0000ff;
+}
+
+body.archive .artifacts {
+  color: #FF0000;
+}
+
+body.archive .places {
+  color: #008000;
+}
+
+body.archive .date {
+  color: #FF69B4;
+}
+
+body.archive .general-link {
+  color: #87CEEB;
+}
+
+body.archive .nav-control {
+  font-family: "New York", Georgia, serif;
+}
+
+body.archive .modal-right-close {
+  border: 2.8px solid black;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: black;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+}
+
+body.archive .modal-right-close:hover {
+  background-color: black;
+  color: white;
+}
+
+body.archive .global-map {
+  border: 3px solid black;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: white;
+  color: black;
+  max-width: 10em;
+}
+
+body.archive .global-map:hover {
+  background-color: black;
+  color: white;
+}
+
+body.archive .lexia-map-open {
+  border: 3px solid black;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: white;
+  color: black;
+  max-width: 10em;
+  display: none;
+}
+
+body.archive .lexia-map-open:hover {
+  background-color: black;
+  color: white;
+}
+
+body.archive .contemporary-dedication {
+  display: none;
+}
+
+body.archive .classic-dedication {
+  display: block;
+}
+
+body.archive .arch-text {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  background-color: #cccccc;
+  background-image: url(../imgs/lex_background_left.svg), url(../imgs/lex_background_right.svg);
+  background-position: right, left;
+  background-repeat: no-repeat;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 10px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body.archive .lexia-number {
+  border-style: solid;
+  border-width: 2px 2px 0;
+  border-color: #ffffff;
+  background-color: #cccccc;
+  background: url(../imgs/lex_background_left.svg) left no-repeat, url(../imgs/lex_background_right.svg) right no-repeat, url(../imgs/lex_background.svg) repeat;
+  background-size: auto 24px;
+  position: relative;
+}
+
+body.archive .lexia-number .faux-close {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  width: 17px;
+  height: 17px;
+  border: solid 2px #888888;
+  right: 3px;
+  top: 2px;
+}
+
+body.archive .lexia-number .faux-close div, body.archive .lexia-number .faux-close .modal-right-close {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  border: solid black;
+  border-width: 2px 2px 0;
+  border-bottom-width: 2px;
+  background-color: #cccccc;
+}
+
+body.archive .work-title {
+  margin-top: -60px;
+  font-weight: bold;
+}
+
+body.archive .line-break {
+  display: block;
+}
+
+body.archive .arch-black-out {
+  border: solid black;
+  border-width: 2px 2px 0;
+  margin-left: 20%;
+  margin-top: 75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (min-width: 800px) {
+  body.archive .arch-black-out {
+    margin-left: 33%;
+  }
+}
+
+body.archive .border-high {
+  border-color: #ffffff;
+  border-bottom-color: #888888;
+}
+
+body.archive .border-back {
+  border-width: 4px;
+  border-color: #cccccc;
+}
+
+body.archive .border-shadow {
+  border-color: #888888;
+}
+
+body.archive .body, body.archive .border-high, body.archive .border-back, body.archive .border-shadow {
+  border-style: solid;
+}
+
+body.archive .body {
+  display: -ms-grid;
+  display: grid;
+}
+
+body.archive .body, body.archive .border-high, body.archive .border-shadow, body.archive .outline {
+  border-width: 2px;
+}
+
+body.archive .body, body.archive .border-high, body.archive .border-back {
+  border-top-width: 0;
+}
+
+body.archive .border-high, body.archive .border-back, body.archive .border-shadow, body.archive .outline {
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+body.archive .border-shadow {
+  border-bottom-color: #ffffff;
+}
+
+body.archive .outline {
+  border: solid 2px black;
+  background-color: white;
+}
+
+body.archive .body-pad {
+  padding: 15px;
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+body.archive .window-top {
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+body.archive ::-webkit-scrollbar {
+  width: 20px;
+  top: 1px;
+  position: relative;
+}
+
+body.archive ::-webkit-scrollbar-button {
+  border-width: 0 2px;
+  border-style: solid;
+  border-color: black;
+  display: block;
+  background-color: #cccccc;
+  height: 10px;
+}
+
+body.archive ::-webkit-scrollbar-track, body.archive ::-webkit-scrollbar-thumb {
+  background: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+body.archive ::-webkit-scrollbar-thumb {
+  background: #cccccc;
+}
+
+body.archive ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body.archive .nav-border {
+  border: solid 2px black;
+  position: fixed;
+  width: 150px;
+  bottom: 15vh;
+  background-color: #cccccc;
+}
+
+body.archive .nav-border .outline {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 3px;
+  background-color: white;
+}
+
+body.archive .nav-border .nav-control {
+  position: relative;
+  width: auto;
+  bottom: auto;
+  border: solid black;
+  border-width: 2px 0 0;
+}
+
+body.archive .nav-border .nav-control .navigator-open {
+  margin: 0;
+  border-top: solid black 2px;
+}
+
+body.archive .nav-border .nav-control div {
+  border: 0;
+}
+
+body.archive .shadow {
+  -webkit-box-shadow: black 5px 5px;
+          box-shadow: black 5px 5px;
+}
+
+body.archive #map-border {
+  width: 80%;
+}
+
+body.archive #navigator {
+  width: 18em;
+  height: 85%;
+}
+
+body.archive .nav-inner {
+  padding: 15px 0;
+  background-color: white;
+  display: inline;
+}
+
+body.archive .map, body.archive #navigator {
+  max-height: 65vh;
+}
+
+body.archive #map-border, body.archive #navigator {
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 10;
+}
+
+body.archive #map-border .border-high, body.archive #navigator .border-high {
+  position: relative;
+  border-width: inherit;
+  -ms-grid-rows: 24px auto;
+      grid-template-rows: 24px auto;
+}
+
+body.archive #map-border .border-back, body.archive #navigator .border-back {
+  height: inherit;
+}
+
+body.archive #map-border #map-close, body.archive #map-border #nav-close, body.archive #navigator #map-close, body.archive #navigator #nav-close {
+  font-size: 0.7em;
+  left: 0;
+}
+
+body.archive #map-border .map, body.archive #navigator .map {
+  margin-left: 15px;
+}
+
+body.archive #map-border .map, body.archive #map-border .navigator, body.archive #navigator .map, body.archive #navigator .navigator {
+  -webkit-transform: none;
+          transform: none;
+  display: inherit;
+  border-width: 0;
+  position: relative;
+  left: 0;
+  top: auto;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+body.archive #map-border .map .lexia-map-open, body.archive #map-border .map .global-map, body.archive #map-border .navigator .lexia-map-open, body.archive #map-border .navigator .global-map, body.archive #navigator .map .lexia-map-open, body.archive #navigator .map .global-map, body.archive #navigator .navigator .lexia-map-open, body.archive #navigator .navigator .global-map {
+  position: relative;
+}
+
+body.archive .mapview:hover {
+  background-color: lightgrey;
+}
+
+@media only screen and (min-width: 800px) {
+  body.archive .mapview {
+    border: 2px solid black;
+    border-right: 2px solid black;
+    grid-area: mapview;
+    background-color: white;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    padding: 15px 0;
+  }
+  body.archive .mapview:hover {
+    background-color: lightgrey;
+  }
+}
+
+body.archive #holodeck {
+  font-family: "Monaco", "Consolas", sans-serif;
+}
+
+body.archive .poem {
+  font-family: "New York", Georgia, serif;
+}
+
+body.archive #email {
+  font-family: "Courier New", monospace;
+}
+
+/* closes body.archive */
+/*# sourceMappingURL=archive.css.map */

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="scss/main.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kzg0iqt.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,300;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <style>
+    body {
+      background-image: url(imgs/landing-bg.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <script>
+    $(window).on('load', function () {
+      // Animate loader off screen
+      $(".preloader").fadeOut("slow");;
+    });
+  </script>
+</head>
+<div class="preloader"></div>
+
+<body>
+  <div class="wrapper landing">
+    <h1>Figurski at Findhorn on Acid</h1>
+    <img src="imgs/mechanical-pig.png">
+    <h2>by Richard Holeton</h2>
+
+    <div class="landing-nav">
+      <a href="introduction.html" onclick="contemporaryModeBeginNoCount()">Introductions</a>
+      <a href="acknowledgements.html" onclick="contemporaryModeBeginNoCount()">Dedication and Acknowledgements</a>
+      <a href="resources.html" onclick="contemporaryModeBeginNoCount()">References and Resources</a>
+    </div>
+
+    <p> A mechanical pig, a commune in Scotland, the Holodeck, psychedelic drugs, a shower in a bathroom in a
+      Florida
+      trailer, Spam, cup-flipping, an international spy—all this and more are back for the 20th Anniversary version of
+      Richard
+      Holeton’s zany hypertext novel <span class="italic">Figurski at Findhorn on Acid</span>.</p>
+
+    <p>Originally published in 2001 by Eastgate Systems, Inc. with Storyspace software, this unique comedic hypertext
+      has been
+      re-created as an archival version in open web languages. Follow Figurski as he travels the universe in search of
+      Rosellini’s 1737 Mechanical Pig.</p>
+
+    <div class="begin-reading">
+      <a onclick="contemporaryModeBegin()">Begin Contemporary Reading</a>
+      <a onclick="classicModeBegin()" onclick="modeSwitch()">Begin Classic Reading</a>
+    </div>
+
+    <div id="copyright">
+      <p>
+        Copyright for Figurski at Findhorn on Acid &copy; 2001, 2021 by Richard Holeton<br>
+        Copyright for site <img src="imgs/cc.png" style="width:15px;position:relative;top:3px;"> <img src="imgs/attribution.png" style="width:15px;position:relative;top:3px;"> <img src="imgs/sharealike.png" style="width:15px;position:relative;top:3px;"> Creative Commons Attribution-ShareAlike 4.0 International
+      </p>
+
+      <p>DOI: https://doi.org/10.7273/yh99-ma57</p>
+    </div>
+
+
+
+  </div>
+  <div id="index-count-modal-mask">
+    <div id="index-count-modal">
+      <button class="modal-close-index">X</button>
+      <p>Document: Figurski_At_Findhorn_On_Acid</p>
+
+      <p>Created: May 15th, 2021</p>
+
+      <p>____________________________________</p>
+
+      <div class="index-modal">
+        <p>Structure:</p>
+        <p>To load </p>
+        <p>Now loaded</p>
+        <p>Spaces:
+          <p>354</p>
+          <p class="counter" data-count="354">0</p>
+
+
+          <p>Story Links:</p>
+          <p>2001</p>
+          <p class="counter" data-count="2001">0</p>
+        </p>
+      </div>
+      <div class="reading-modal-outer">
+        <div class="begin-reading-modal"><a href="figurski-1x.html">Begin Reading</a></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="arch_jquery.js"></script>
+  <script type="text/javascript" src="script-general.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".modal-right-close").click(function () {
+        $(".map").css("display", "none");
+        $(".navigator").css("display", "none");
+      });
+
+
+      $(".modal-close-index").click(function () {
+        $("#index-count-modal-mask").css("display", "none");
+      });
+
+
+      $(".show-links").click(function () {
+        $(".hidden-link").css("border", "0px solid black").animate({
+          'borderWidth': '.5px',
+        }, 500).delay(5000).animate({
+          'borderWidth': '0px',
+        }, 500)
+      });
+
+      $(".navigator-open").click(function () {
+        $(".navigator").css("display", "block");
+      });
+
+      /* $(".navigator-open-2").click(function () {
+        $(".navigator").css("display", "block");
+      }); */
+
+      $(".mapview").click(function () {
+        $(".map").css("display", "block");
+      });
+    });
+
+    $("#spam-choice").click(function () {
+      $(".choose-link-modal").css("display", "block");
+    });
+
+
+    function goBack() {
+      window.history.back();
+    }
+
+    function classicModeBegin() {
+      window.localStorage.setItem('key', "1");
+      $('#index-count-modal-mask').css("display", "flex");
+      $('.counter').each(function () {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+
+        $({
+          countNum: $this.text()
+        }).animate({
+            countNum: countTo
+          },
+
+          {
+
+            duration: 2000,
+            easing: 'linear',
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+              //alert('finished');
+            }
+
+          });
+
+
+
+      });
+    }
+
+    function contemporaryModeBegin() {
+      localStorage.removeItem("key");
+      $('#index-count-modal-mask').css("display", "flex");
+      $('.counter').each(function () {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+
+        $({
+          countNum: $this.text()
+        }).animate({
+            countNum: countTo
+          },
+
+          {
+
+            duration: 2000,
+            easing: 'linear',
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+              //alert('finished');
+            }
+
+          });
+
+
+
+      });
+    }
+
+    function contemporaryModeBeginNoCount() {
+      localStorage.removeItem("key");
+    }
+  </script>
+  <!-- Default Statcounter code for Figurski at Findhorn on
+Acid https://figurskiatfindhornonacid.com -->
+  <script type="text/javascript">
+    var sc_project = 12430446;
+    var sc_invisible = 1;
+    var sc_security = "12036fd0";
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+          class="statcounter" src="https://c.statcounter.com/12430446/0/12036fd0/1/" alt="Web Analytics"></a>
+    </div>
+  </noscript>
+  <!-- End of Statcounter Code --
+
+</html>

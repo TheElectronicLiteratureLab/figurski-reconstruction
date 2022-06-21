@@ -1,0 +1,559 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p{
+	padding-top: .75em;
+}
+.people{
+
+}
+
+.artifacts{
+
+}
+
+.places{
+
+}
+
+.people-color{
+color:blue;
+}
+
+.date{
+}
+
+.artifacts-color{
+color:red;
+}
+
+.places-color{
+  color:green;
+}
+
+.note-img-box{
+  width:100%;
+  height:auto;
+  padding-top: .2em;
+}
+
+
+
+.note-image{
+width:100%;
+height:100%;
+}
+
+#general{
+	font-family: New York, Georgia, serif;
+}
+
+#poem{
+  font-family: New York, Georgia, serif;
+}
+
+
+#email{
+	font-family: New York, Georgia, serif;
+	font-size:.9em;
+}
+
+#holodeck{
+	font-family: dico-typewriter, mono, sans-serif;
+	font-size: .95em;
+}
+
+.book-title{
+	font-size: 2em;
+	padding-bottom: .7em;
+}
+
+.comas-title{
+  font-size: 2em;
+  padding-bottom: .3em;
+}
+
+.comas-body{
+  padding-top: .75em;
+}
+
+.comas-body p{
+   padding-top: 0em;
+}
+
+.comas-subtitle{
+  font-size: 1.6em;
+  padding-bottom: .2em;
+}
+
+.comas-subtitle p{
+  padding-top: 0em;
+  line-height: 1.5em;
+}
+
+.first-comas{
+font-size: 1.2em;
+}
+
+.book-chapter{
+	font-size: 1.3em;
+	letter-spacing: .05em;
+	padding-bottom: .7em;
+
+}
+
+.book-sub-chapter{
+	font-size: 1.2em;
+	padding-bottom: .25em;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.poem-grid{
+	display: grid;
+	grid-template-columns: 1fr .1fr;
+  grid-gap: 1em;
+}
+
+.first{
+  font-size: 2em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+a:hover{
+  color: black;
+}
+
+.top-section{
+  border: 2px solid black;
+}
+
+.title{
+  border: 2px solid black;
+}
+
+#scholarly{
+  display:none;
+}
+
+body{
+    margin:0;
+    line-height: 1.5em;
+    border: 2px solid black;
+}
+
+.body{
+  border: 2px solid black;
+}
+.work-title{
+    text-align: right;
+}
+
+.modal-right-close{
+  display:inline-block;
+  text-align:right;
+  position: absolute;
+  top: 1em;
+}
+
+#nav-close{
+    left: 85%;
+}
+
+#map-close{
+  left: 90%;
+}
+
+#link-choice-close{
+  left: 90%;
+}
+
+.navigator{
+border: 2px solid black;
+background-color: white;
+position: fixed;
+top:5%;
+width: 18em;
+height: 85%;
+  overflow-y:auto;
+padding: 1em 2em 1em 2em;
+left: 50%;
+transform: translate(-50%, 0);
+display: none;
+z-index: 5;
+
+
+}
+
+.nav-inner{
+	overflow-y:auto;
+}
+
+.map{
+border: 2px solid black;
+background-color: white;
+position: fixed;
+top:5%;
+width: 80%;
+height: 80%;
+padding: 1em 2em 1em 2em;
+left: 50%;
+transform: translate(-50%, 0);
+display: none;
+z-index: 5;
+}
+
+.choose-link-modal{
+border: 2px solid black;
+background-color: white;
+position: fixed;
+top:25%;
+width: 40%;
+height: 18em;
+padding: 1em 2em 1em 2em;
+left: 50%;
+transform: translate(-50%, 0);
+display: none;
+z-index: 5;
+}
+
+.secondary-choice {
+border: 2px solid black;
+background-color: white;
+position: fixed;
+top:25%;
+width: 40%;
+height: 18em;
+padding: 1em 2em 1em 2em;
+left: 50%;
+transform: translate(-50%, 0);
+display: none;
+z-index: 5;
+}
+
+.inner-choice-modal{
+  background-color: grey;
+  margin-top: 2em;
+  height: 12em;
+  overflow-y:auto;
+}
+
+.modal-lexia{
+  padding: .5em 1em 0em 1em;
+}
+
+.modal-lexia:hover{
+  background-color:lightgrey;
+}
+
+
+.lexia-number{
+    text-align: center;
+}
+
+.wrapper{
+    margin: 2em 23% 25% 15%;
+    line-height: 2em;
+}
+
+h3{
+  margin-right: 5%;
+  margin-top:1.5em;
+}
+
+.hidden-link{
+
+}
+
+.nav-control{
+  position: fixed;
+  top:  7.2em;
+  right: 5%;
+  display: grid;
+  grid-template-areas: "mapview showlinks"
+  "leftarrow rightarrow"
+  ". ."
+  "navigator navigator"
+  ". ."
+  "Classic Classic";
+  grid-template-columns: 2.4em 2.4em;
+  grid-template-rows: 2.4em 2.4em 1em 2.4em 1em 2.4em;
+ 
+}
+
+.nav-hover:hover{
+  background-color: grey;
+}
+
+.navigator-open{
+  border: 2px solid black;
+  width: 4.75em;
+  height: 2.3em;
+  top: 10em;
+  grid-area: navigator;
+}
+
+.show-notes{
+  border: 2px solid black;
+  width: 4.75em;
+  height: 2.3em;
+  top: 10em;
+  grid-area: Classic;
+}
+
+.mapview{
+	border: 2px solid black;
+	width: 2.3em;
+	height: 2.3em;
+  grid-area: mapview;
+}
+.show-links{
+  border: 2px solid black;
+  width: 2.3em;
+  height: 2.3em;
+  grid-area: showlinks;
+}
+.left{
+  border: 2px solid black;
+  width: 2.3em;
+  height: 2.3em;
+  grid-area: leftarrow;
+}
+.right{
+  border: 2px solid black;
+  width: 2.3em;
+  height: 2.3em;
+  grid-area: rightarrow;
+}
+
+.hover-box{
+position: absolute;
+  right: 2em;
+  bottom: 110%;
+  background-color: white;
+  display: none;
+  width: 11em;
+  
+}
+.hover-toggle{
+  border: 2px solid black;
+  padding: 1em;
+  margin-top: -2px;
+}
+
+.hover-top{
+  height: 1em;
+   border: 2px solid black;
+   background-color: #D9D4D4;
+}
+.footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 5em;
+    background: linear-gradient(0deg, rgba(217,212,212,1) 65%, rgba(217,212,212,0) 100%);
+}
+
+.toggle{
+  text-align: right;
+  margin-right: 2em;
+  position: relative;
+  top: 1.5em;
+
+}
+
+.footer-label{
+  position: relative;
+  top:.5em;
+  padding-right: 1em;
+}
+
+.bold{
+font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #A3A2A2;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #017171;
+}
+
+input:focus + .slider {
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1299px) {
+  .wrapper{
+    margin: 2em 15% 15% 15%;
+}
+.nav-control{
+  }
+}
+
+
+@media screen and (min-width: 1300px){
+  .wrapper{
+    margin: 2em 15% 15% 15%;
+
+}
+
+  .nav-control{
+  right: 5%;
+  display: grid;
+  grid-template-areas: "mapview mapview"
+  "leftarrow rightarrow"
+  ". ."
+  "navigator navigator"
+  ". ."
+  "Classic Classic";;
+  grid-template-columns: 3.1em 3.1em;
+  grid-template-rows: 3.1em 3.1em 1em 3.1em 1em 3.1em;
+ 
+}
+
+.navigator-open{
+  width: 6.15em;
+  height: 3em;
+}
+
+.show-notes{
+   width: 6.15em;
+   height: 3em;
+}
+
+.nav-hover:hover{
+  background-color: grey;
+}
+
+.mapview{
+  width: 6.1em;
+  height: 3em;
+}
+.show-links{
+    width: 3em;
+  height: 3em;
+  display:none;
+}
+.left{
+    width: 3em;
+  height: 3em;
+}
+.right{
+    width: 3em;
+  height: 3em;
+}
+
+  
+}
